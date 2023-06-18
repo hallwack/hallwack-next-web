@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-transparent px-16 h-20 flex justify-between items-center sticky top-0 backdrop-blur-lg border-b-[0.5px] border-zinc-400">
+    <nav className="w-full z-50 bg-transparent px-16 h-20 flex justify-between items-center sticky top-0 backdrop-blur-lg border-b-[0.5px] border-zinc-400">
       <div>
         <h1 className="font-bold text-3xl">
           <Link href="/">Raihan Adam</Link>
@@ -14,7 +14,6 @@ export default function Navbar() {
         <NavLink link="/about">About</NavLink>
         <NavLink link="/projects">Projects</NavLink>
         <NavLink link="/skills">Skills</NavLink>
-        <NavLink link="/contacts">Contacts</NavLink>
       </ul>
     </nav>
   );
