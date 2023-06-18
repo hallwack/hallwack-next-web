@@ -1,9 +1,17 @@
 import { Metadata } from "next";
 import "./globals.css";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -20,9 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.className}>
+      <body className={`${inter.variable} ${jetBrainsMono.variable} font-sans flex min-h-screen flex-col items-center`}>
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center justify-between">
+        <main>
           {children}
         </main>
       </body>
