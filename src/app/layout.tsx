@@ -28,11 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${jetBrainsMono.variable} font-sans flex min-h-screen flex-col items-center`}>
-        <Navbar />
-        <main>
-          {children}
-        </main>
+      <body
+        className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100`}
+      >
+        <div className="flex min-h-screen flex-col items-center">
+          <Navbar />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
