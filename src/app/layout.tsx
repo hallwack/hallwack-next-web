@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100`}
+        className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100 antialiased`}
       >
         <div className="flex min-h-screen flex-col items-center">
           <Navbar />
