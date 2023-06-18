@@ -1,3 +1,4 @@
+import { Figma, Github, Instagram, Linkedin, Mails } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="container mx-auto my-8 max-w-4xl">
-      <div className="flex flex-col gap-8">
+    <div className="container mx-auto my-8 lg:max-w-4xl">
+      <div className="flex flex-col gap-16">
         <h1 className="tracking-tighter font-mono text-5xl font-semibold text-center">
           A learner, interesting about a new thing, especially about web
           development.
@@ -29,19 +30,43 @@ export default function Home() {
             improve myself, and have excellent interpersonal skills, especially
             in new and diverse environments.
           </p>
-          {/* <p>
-            Throughout my career journey, I have successfully completed various
-            exciting web projects that have had a positive impact. I believe
-            that technology can provide innovative solutions to everyday
-            challenges, which inspires me to continuously develop my skills and
-            knowledge in this field.
-          </p>
-          <p>
-            During my tenure at the startup, I have been involved in the
-            development of responsive web applications, appealing user
-            interfaces, and integration with various APIs. I am also proficient
-            in optimizing website performance and ensuring robust data security.
-          </p> */}
+        </div>
+        <div className="flex justify-end gap-8">
+          <a
+            href="https://www.linkedin.com/in/raihan-adam-4011ba1b9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin size={36} />
+          </a>
+          <a
+            href="https://www.figma.com/@raihanadam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Figma size={36} />
+          </a>
+          <a
+            href="https://github.com/hallwack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github size={36} />
+          </a>
+          <a
+            href="https://instagram.com/raihanadamstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram size={36} />
+          </a>
+          <a
+            href="mailto:hallwack.id@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mails size={36} />
+          </a>
         </div>
       </div>
     </div>
