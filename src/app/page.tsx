@@ -1,9 +1,11 @@
-import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Home | hallwack.dev",
+  },
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar />
-    </main>
-  );
+  return <div className="my-4">Home</div>;
 }
