@@ -14,7 +14,7 @@ export default function Home() {
           A learner, interesting about a new thing, especially about web
           development.
         </h1>
-        <div className="leading-10 tracking-wide text-justify space-y-8">
+        <div className="leading-8 tracking-wide text-justify space-y-8">
           <p>
             I am a 7th semester student majoring in Informatics Engineering at
             UIN Sunan Gunung Djati Bandung. Over the past two years, I have been
