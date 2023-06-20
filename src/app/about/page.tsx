@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="container mx-auto my-8 lg:max-w-4xl">
+    <div className="container mx-auto my-24 lg:max-w-4xl">
       <div className="flex flex-col gap-12">
         <div className="relative w-72 h-96 overflow-hidden self-center">
           <Image
