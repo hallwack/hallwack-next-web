@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="container mx-auto my-8 lg:max-w-4xl">
+    <div className="container mx-auto my-24 lg:max-w-4xl">
       <div className="flex flex-col gap-16">
         <h1 className="tracking-tighter font-mono text-5xl font-semibold text-center">
           A learner, interesting about a new thing, especially about web
