@@ -10,10 +10,10 @@ export default function Page() {
     <div className="container mx-auto my-24 lg:max-w-4xl">
       <div className="flex flex-col gap-12">
         <div className="relative w-72 h-96 overflow-hidden self-center">
-          <Image
-            src="/ava.jpg"
+          <Image src="/ava.jpg"
             alt="Raihan Adam"
             fill
+            sizes="100vw"
             className="object-cover object-bottom rounded-md"
           />
         </div>
