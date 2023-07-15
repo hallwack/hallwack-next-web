@@ -10,9 +10,7 @@ export default function Page() {
   return (
     <div className="container mx-auto my-24 lg:max-w-4xl">
       <div className="flex flex-col gap-12">
-        <div>
-          <h1 className="text-5xl font-bold font-mono self-start">Projects</h1>
-        </div>
+        <h1 className="text-5xl font-bold font-mono self-start">Projects</h1>
         <div className="flex flex-col gap-16">
           <div className="w-full flex flex-col gap-4">
             <div className="relative overflow-hidden">
