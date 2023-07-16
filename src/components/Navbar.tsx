@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import NavLink from "./NavLink";
@@ -11,9 +11,9 @@ export default function Navbar() {
   const pathname = usePathname();
   const savedPathname = useRef(pathname);
 
-  const handleSidebar = () => {
+  const handleSidebar = useCallback(() => {
     setSidebar(!sidebar);
-  };
+  }, [sidebar]);
 
   useEffect(() => {
     if (savedPathname.current !== pathname) {
