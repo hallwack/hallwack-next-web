@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100 antialiased`}
       >
-        <div className="flex min-h-screen flex-col items-center">
+        <div className="flex min-h-screen flex-col items-center relative">
           <Navbar />
           <main>{children}</main>
         </div>

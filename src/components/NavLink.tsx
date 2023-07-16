@@ -16,7 +16,7 @@ export default function NavLink({ link, children }: Props) {
   return (
     <Link href={link}>
       <li
-        className={clsx("py-2 px-5 rounded hover:bg-zinc-300 cursor-pointer transition duration-200", {
+        className={clsx("text-base font-medium lg:font-normal lg:text-sm py-3 px-8 lg:py-2 lg:px-5 rounded hover:bg-zinc-300 cursor-pointer transition duration-200", {
           "bg-zinc-300": pathname === link,
         })}
       >
