@@ -17,14 +17,14 @@ export default function Page() {
           <h2 className="font-mono font-semibold text-2xl">
             Libraries and Frameworks
           </h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
             {dataSkillsLib.map((data, index) => (
               <div
                 key={index}
-                className="w-56 border border-zinc-400 rounded-lg overflow-hidden"
+                className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="bg-zinc-200 p-8 w-full">
-                  <div className="relative w-24 h-24 mx-auto">
+                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                  <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}
                       alt={data.name}
@@ -45,14 +45,14 @@ export default function Page() {
           <h2 className="font-mono font-semibold text-2xl">
             Programming Language
           </h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
             {dataSkillsLang.map((data, index) => (
               <div
                 key={index}
-                className="w-56 border border-zinc-400 rounded-lg overflow-hidden"
+                className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="bg-zinc-200 p-8 w-full">
-                  <div className="relative w-24 h-24 mx-auto">
+                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                  <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}
                       alt={data.name}
@@ -72,14 +72,14 @@ export default function Page() {
 
         <div className="space-y-6">
           <h2 className="font-mono font-semibold text-2xl">Tools</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
             {dataTools.map((data, index) => (
               <div
                 key={index}
-                className="w-56 border border-zinc-400 rounded-lg overflow-hidden"
+                className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="bg-zinc-200 p-8 w-full">
-                  <div className="relative w-24 h-24 mx-auto">
+                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                  <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}
                       alt={data.name}
