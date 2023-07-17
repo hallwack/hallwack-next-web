@@ -15,12 +15,12 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={handleToggleTheme}
-      className="py-2 px-3 hover:bg-zinc-300 rounded"
+      className="py-2 px-3 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded"
     >
       {theme === "dark" ? <Moon size={20} /> : <Sun size={20} />}
       <ul
         className={clsx(
-          "absolute mt-4 py-2 bg-zinc-50 px-2 rounded right-0 space-y-2",
+          "absolute mt-4 py-2 bg-zinc-50 dark:bg-zinc-800 px-2 rounded right-0 space-y-2",
           {
             hidden: !themeToggle,
             block: themeToggle,
@@ -29,13 +29,13 @@ export default function ThemeToggle() {
       >
         <li
           onClick={() => setTheme("light")}
-          className="inline-flex gap-2 py-2 px-6 hover:bg-zinc-300 rounded"
+          className="inline-flex gap-2 py-2 px-6 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded"
         >
           <span>Light</span>
         </li>
         <li
           onClick={() => setTheme("dark")}
-          className="inline-flex gap-2 py-2 px-6 hover:bg-zinc-300 rounded"
+          className="inline-flex gap-2 py-2 px-6 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded"
         >
           <span>Dark</span>
         </li>

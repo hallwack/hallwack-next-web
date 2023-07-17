@@ -46,7 +46,7 @@ export default function Navbar() {
         </div>
       </nav>
       {sidebar && (
-        <ul className="absolute z-10 lg:hidden w-full bg-zinc-100 h-screen flex flex-col items-center justify-center gap-8">
+        <ul className="absolute z-10 lg:hidden w-full bg-zinc-100 dark:bg-zinc-900 h-screen flex flex-col items-center justify-center gap-8">
           <NavLink link="/">Home</NavLink>
           <NavLink link="/about">About</NavLink>
           <NavLink link="/projects">Projects</NavLink>

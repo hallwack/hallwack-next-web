@@ -36,7 +36,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/raihan-adam-4011ba1b9"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-4 hover:bg-zinc-300 rounded-md transition duration-200"
+            className="py-3 px-4 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition duration-200"
           >
             <Linkedin size={28} />
           </a>
@@ -44,7 +44,7 @@ export default function Home() {
             href="https://www.figma.com/@raihanadam"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-4 hover:bg-zinc-300 rounded-md transition duration-200"
+            className="py-3 px-4 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition duration-200"
           >
             <Figma size={28} />
           </a>
@@ -52,7 +52,7 @@ export default function Home() {
             href="https://github.com/hallwack"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-4 hover:bg-zinc-300 rounded-md transition duration-200"
+            className="py-3 px-4 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition duration-200"
           >
             <Github size={28} />
           </a>
@@ -60,7 +60,7 @@ export default function Home() {
             href="https://instagram.com/raihanadamstagram"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-4 hover:bg-zinc-300 rounded-md transition duration-200"
+            className="py-3 px-4 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition duration-200"
           >
             <Instagram size={28} />
           </a>
@@ -68,7 +68,7 @@ export default function Home() {
             href="mailto:hallwack.id@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-3 px-4 hover:bg-zinc-300 rounded-md transition duration-200"
+            className="py-3 px-4 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition duration-200"
           >
             <Mails size={28} />
           </a>

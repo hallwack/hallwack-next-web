@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100 antialiased`}
+        className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-900 antialiased`}
       >
         <LayoutProvider>
           <div className="flex min-h-screen flex-col items-center relative">

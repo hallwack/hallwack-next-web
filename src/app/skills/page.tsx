@@ -23,7 +23,7 @@ export default function Page() {
                 key={index}
                 className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                <div className="lg:bg-zinc-200 dark:lg:bg-zinc-700 bg-transparent p-8 lg:w-full w-28">
                   <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}
@@ -51,7 +51,7 @@ export default function Page() {
                 key={index}
                 className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                <div className="lg:bg-zinc-200 dark:lg:bg-zinc-700 bg-transparent p-8 lg:w-full w-28">
                   <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}
@@ -78,7 +78,7 @@ export default function Page() {
                 key={index}
                 className="lg:w-56 w-full flex lg:flex-col flex-row border border-zinc-400 rounded-lg overflow-hidden"
               >
-                <div className="lg:bg-zinc-200 bg-transparent p-8 lg:w-full w-28">
+                <div className="lg:bg-zinc-200 dark:lg:bg-zinc-700 bg-transparent p-8 lg:w-full w-28">
                   <div className="relative lg:w-24 h-24 w-full mx-auto">
                     <Image
                       src={data.img}

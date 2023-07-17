@@ -34,7 +34,7 @@ export default function Page() {
                 href="http://hairnerds.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-300 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
+                className="bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
               >
                 hairnerds.id <ArrowUpRight className="ml-2" />
               </a>
@@ -62,7 +62,7 @@ export default function Page() {
                 href="http://tanoseal.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-300 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
+                className="bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
               >
                 tanoseal.com <ArrowUpRight className="ml-2" />
               </a>
@@ -90,7 +90,7 @@ export default function Page() {
                 href="http://edu.hellowork-asia.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-300 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
+                className="bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:bg-zinc-400 transition duration-200 w-fit py-2 px-4 rounded-full inline-flex"
               >
                 edu.hellowork-asia.com <ArrowUpRight className="ml-2" />
               </a>
