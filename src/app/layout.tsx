@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import "./globals.css";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import LayoutProvider from "@/components/layouts/LayoutProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,10 @@ export const metadata: Metadata = {
     default: "Hallwack",
   },
   description: "Hallwack portofolio",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 export default function RootLayout({
@@ -27,14 +32,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${jetBrainsMono.variable} font-sans text-zinc-800 bg-zinc-100 antialiased`}
       >
-        <div className="flex min-h-screen flex-col items-center relative">
-          <Navbar />
-          <main>{children}</main>
-        </div>
+        <LayoutProvider>
+          <div className="flex min-h-screen flex-col items-center relative">
+            <Navbar />
+            <main>{children}</main>
+          </div>
+        </LayoutProvider>
       </body>
     </html>
   );
