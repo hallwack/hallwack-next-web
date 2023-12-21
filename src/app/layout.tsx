@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     default: "Hallwack",
   },
   description: "Hallwack portofolio",
+};
+
+export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
