@@ -23,14 +23,12 @@ export default function Navbar() {
       handleSidebar();
       savedPathname.current = pathname;
     }
-  }, [handleSidebar, pathname]);
+  }, [pathname]);
 
   return (
     <>
       <nav className="w-full z-50 bg-transparent px-8 lg:px-16 h-20 flex justify-between items-center sticky top-0 backdrop-blur-lg border-b-[0.5px] border-zinc-400">
-        <h1 className="font-bold lg:text-3xl text-2xl">
-          <Link href="/">Raihan Adam</Link>
-        </h1>
+        <h1 className="font-bold lg:text-3xl text-2xl">Raihan Adam</h1>
         <div className="flex gap-4 items-center">
           <ul className="lg:flex hidden items-center gap-2 text-sm">
             <NavLink link="/">Home</NavLink>
