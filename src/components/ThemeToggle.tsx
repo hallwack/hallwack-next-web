@@ -13,18 +13,17 @@ export default function ThemeToggle() {
   }, [themeToggle]);
 
   return (
-    <button
-      onClick={handleToggleTheme}
-      className="py-2 px-3 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded"
-    >
-      {theme === "dark" ? <Moon size={20} /> : <Sun size={20} />}
+    <div className="py-2 px-3 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded">
+      <button className="flex items-center justify-center" onClick={handleToggleTheme}>
+        {theme === "dark" ? <Moon size={20} /> : <Sun size={20} />}
+      </button>
       <ul
         className={clsx(
           "absolute mt-4 py-2 bg-zinc-50 dark:bg-zinc-800 px-2 rounded right-0 space-y-2",
           {
             hidden: !themeToggle,
             block: themeToggle,
-          }
+          },
         )}
       >
         <li
@@ -40,6 +39,6 @@ export default function ThemeToggle() {
           <span>Dark</span>
         </li>
       </ul>
-    </button>
+    </div>
   );
 }
